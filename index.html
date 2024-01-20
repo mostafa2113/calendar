@@ -5,6 +5,7 @@
     <title>Calendar</title>
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fontawesome/all.min.css">
 </head>
 <body>
     <header>
@@ -13,8 +14,21 @@
         </h1>
     </header>
     <main class="container">
-        <i class="fa-regular fa-calendar"></i>
+        <div class="row text-center">
+            <div class="col-50">
+                <div class="dropdown-box">
+                    <button class="dropdown-btn border-blue">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="today-date"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-50">
+
+            </div>
+        </div>
     </main>
+    <script src="./js/fontawesome/all.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

@@ -5,18 +5,39 @@ body{
     padding: 0;
     margin: 0;
 }
-
 #title{
     text-align: center;
 }
-
 .container {
     width: 90%;
-    background-color: royalblue;
     margin-right: auto;
     margin-left: auto;
 }
-
-.row{
+.row {
+    width: 100%;
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}
+.col-50{
+    min-width: 50%;
+}
+.border-blue{
+    border: 1px solid royalblue;
+}
+.bg-red{
+    background-color: lightcoral;
+}
+.bg-blue{
+    background-color: royalblue;
+}
+.bg-green{
+    background-color: lightgreen;
+}
+.bg-white{
+    background-color: wheat;
 }
