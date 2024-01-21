@@ -7,24 +7,35 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/fontawesome/all.min.css">
 </head>
-<body>
+<body class="bg-grey">
     <header>
         <h1 id="title">
             Calendar App
         </h1>
     </header>
     <main class="container">
-        <div class="row text-center">
-            <div class="col-50">
-                <div class="dropdown-box">
-                    <button class="dropdown-btn border-blue">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span id="today-date"></span>
-                    </button>
+        <div class="row text-center justify-center">
+            <div class="w-50">
+                <button id="dropdown-btn" class="btn mx-auto py-1 border-blue bg-white rounded-10 row">
+                    <i class="text-grey fas fa-calendar-alt fa-xl justify-self-start w-10"></i>
+                    <span id="today-date" class="w-80"></span>
+                    <i class="text-grey fa fa-angle-down fa-xl w-10"></i>
+                </button>
+                <div id="dropdown-box" class="row justify-center my-1 bg-white rounded-10 p-1 border-blue">
+                    <div class="w-100 row space-between py-1">
+                        <span id="date"></span>
+                        <span>
+                            <i class="text-grey fa fa-angle-left fa-xl" id="prev-btn" onclick="prev()"></i>
+                            <i class="text-grey fa fa-angle-right fa-xl" id="next-btn" onclick="next()"></i>
+                        </span>
+                    </div>
+                    <div id="calendar-table" class="w-100">
+                        <ul id="week-days">
+                        </ul>
+                        <ul id = "days">
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-50">
-
             </div>
         </div>
     </main>

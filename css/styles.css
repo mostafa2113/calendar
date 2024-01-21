@@ -1,3 +1,6 @@
+:root{
+    --grey:#F3F5F7;
+}
 *{
     box-sizing: border-box;
 }
@@ -16,18 +19,32 @@ body{
 .row {
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-around {
     justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
 }
 .text-center{
     text-align: center;
 }
-.col-50{
-    min-width: 50%;
+.outline-less {
+    outline: none;
+}
+.border-less{
+    border: none;
 }
 .border-blue{
     border: 1px solid royalblue;
+}
+.bg-grey{
+    background-color:var(--grey);
 }
 .bg-red{
     background-color: lightcoral;
@@ -39,5 +56,106 @@ body{
     background-color: lightgreen;
 }
 .bg-white{
-    background-color: wheat;
+    background-color: white;
+}
+.rounded-10{
+    border-radius:10px;
+}
+.p-1{
+    padding: .7rem;
+}
+.px-1{
+    padding-left: .7rem;
+    padding-right: .7rem;
+}
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.my-1{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+.w-100{
+    width: 100%;
+}
+.w-90{
+    width: 90%;
+}
+.w-80{
+    width:80%;
+}
+.w-50{
+    width: 50%;
+}
+.w-30{
+    width: 30%;
+}
+.w-20{
+    width: 20%;
+}
+.w-10{
+    width: 10%;
+}
+
+#dropdown-box {
+    transition: display 500ms ease-in;
+    display:none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+.btn {
+    cursor: pointer;
+}
+.text-grey{
+    color: grey;
+}
+#today-date{
+    position: relative;
+    top: 7px;
+    text-align: left;
+}
+#today-date::before{
+    content: "select day";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    color: royalblue;
+}
+#date{
+    color: royalblue;
+}
+#week-days{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#week-days li{
+    width: calc(100%/7);
+}
+#days{
+     display: flex;
+    flex-wrap:wrap;
+     list-style: none;
+ }
+#days li{
+    width: calc(100%/7);
+    margin-bottom: 10px;
+}
+#prev-btn,#next-btn{
+    height:25px;
+    width: 25px;
+    cursor: pointer;
+}
+#prev-btn:hover,#next-btn:hover{
+    border: var(--grey) 1px solid;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+.active{
+    color: royalblue;
+    border-radius: 50%;
 }
